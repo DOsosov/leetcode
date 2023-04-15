@@ -1,4 +1,5 @@
 package main
+
 func twoSum(nums []int, target int) []int {
     sum := 0
     for i := 0; i < len(nums) - 1; i++ {
@@ -7,9 +8,11 @@ func twoSum(nums []int, target int) []int {
             if sum == target {
                 nums[0] = i
                 nums[1] = j
+                
                 return(nums[:2])
             }
         }
     }
+
     return(nums)
 }
